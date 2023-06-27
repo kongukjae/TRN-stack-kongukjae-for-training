@@ -64,4 +64,67 @@ Typescript에서는 '정적(staic)'으로 명시되지 않은 변수 및 상수�
 해당 키를 사용하면 해석할 파일과 해석된 파일을 설정할 수 있지만, 해당 작업은 번들러가 대신 해주기 때문에, 특별한 경우를 제외하고는 설정하지 않는 것이 좋다.
 - 번들러를 사용하지 않는 경우, 설정하는 편이다.
 
+7. `npm install eslint --save-dev`
+- devDependencies에 eslint를 설치한다.
 
+8. `npm install prettier --save-dev`
+- eslint와 동일한 방식으로 설치한다.
+- eslint와 prettier를 함께 동시에 쓰는 편이지만, 둘의 기능과 목적은 매우 다르다.
+
+9. `npx eslint --init`
+
+> 1. 간단한 문법정도 검사 : To check syntax only
+> 2. 문법과 야기될 문제 검사 : To check syntax and find problems
+> 3. 문법과 문제, 제안까지 기능 : To check syntax, find problems, and enforce code style
+
+- 일반적인 경우 3번에 해당하는 설정을 진행하는 편이다.(프로젝트마다 매우 상이하다.)
+
+> 1. JavaScript modules (import/export)
+> 2. CommonJS (require/exports)
+> 3. None of these
+
+- 해당 프로젝트에서는 웹팩, typescript를 사용할 것이기 때문에 1번을 선택한다.
+
+> 1. React
+> 2. Vue.js
+> 3. None of these
+
+- React, vue.js를 사용하지 않는 경우 3번을 선택한다.(다른 프레임워크도 많으므로 3번을 선택하는 경우도 상당히 많다.
+- 설명하기 위해 해당 작업에서는 3번을 선택한다.
+
+> Does your project use TypeScript? » No / Yes
+
+- 프로젝트 특성을 살려 typescript를 선택한다.
+
+> Where does your code run? » Browser / Node
+
+- 둘 다 사용하기 때문에 큰 상관은 없지만, 브라우저에서 동작하는 경우가 많으므로 브라우저를 선택한다.
+
+> How would you like to define a style for your project? 
+> 1. Use a popular style guide (Airbnb, Standard, Google, etc.)
+> 2. Answer questions about your style
+
+- 1번을 선택하면, eslint가 제공하는 여러가지 스타일 가이드 중 하나를 선택할 수 있다.
+- 일반적으로 1번을 선택하고, 특수한 경우 2번을 선택하는 편이다.
+
+> Which style guide do you want to follow?
+> 1. Standard: https://github.com/standard/eslint-config-standard-with-typescript
+> 2. XO: https://github.com/xojs/eslint-config-xo-typescript
+
+- 두개의 스타일은 약간의 차이가 있지만, 포멧터를 사용할 것이므로 1번을 선택하고 넘어간다.
+
+> What format do you want your config file to be in?
+> 1. JavaScript
+> 2. YAML
+> 3. JSON
+
+- 일반적으로 3번을 선택한다. (프로젝트마다 다르다.)
+
+```  
+Checking peerDependencies of eslint-config-standard-with-typescript@latest
+The config that you've selected requires the following dependencies:
+
+eslint-config-standard-with-typescript@latest @typescript-eslint/eslint-plugin@^5.50.0 eslint@^8.0.1 eslint-plugin-import@^2.25.2 eslint-plugin-n@^15.0.0 eslint-plugin-promise@^6.0.0 typescript@*
+```
+
+위와 같이(다른 것을 선택했다면, 다른 모듈이 나올 수 있다.) eslint 설치관련 플러그인 모듈들 목록이 나오며 Yes 선택을 진행하면, 해당 모듈들이 설치된다.
