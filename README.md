@@ -128,3 +128,25 @@ eslint-config-standard-with-typescript@latest @typescript-eslint/eslint-plugin@^
 ```
 
 위와 같이(다른 것을 선택했다면, 다른 모듈이 나올 수 있다.) eslint 설치관련 플러그인 모듈들 목록이 나오며 Yes 선택을 진행하면, 해당 모듈들이 설치된다.
+
+10. .eslintrc.js 파일 수정
+
+```
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module",
+        "project": "./tsconfig.json" // config 정보 추가
+    },
+```
+
+- typescript를 사용하기 때문에 parserOptions에 project 정보를 추가한다.
+
+```
+    "extends": [
+        "standard-with-typescript" // extends 정보 추가
+    ],
+```
+
+
+11. `npx eslint ./index.ts`
+
