@@ -150,3 +150,50 @@ eslint-config-standard-with-typescript@latest @typescript-eslint/eslint-plugin@^
 
 11. `npx eslint ./index.ts`
 
+-정상적으로 eslint가 동작하는지 확인한다.
+
+12. `npm install --save-dev prettier`
+12. `npm install --save-dev eslint-config-prettier`
+12. `npm install --save-dev eslint-plugin-prettier`
+
+- eslint에 prettier가 정상 작동되도록, 관련 정의 파일과 플러그인 파일을 추가 설치한뒤,
+- .eslintrc.js 파일에 다음과 같이 추가한다.
+
+```
+    "extends": [
+        "standard-with-typescript",
+        "plugin:prettier/recommended",
+        "prettier" // extends 정보 추가
+    ],
+```
+
+- 필요에 따라서 extends prettier연산을 만들어 낸다.
+  
+13. .prettierrc 파일 생성
+- 변형하고 싶은 prettier의 기본 설정을 .prettierrc 파일에 작성한다.
+    
+    ```
+    {
+        "printWidth": 80,
+        "tabWidth": 2,
+        "useTabs": false,
+        "semi": true,
+        "singleQuote": true,
+        "quoteProps": "as-needed",
+        "jsxSingleQuote": false,
+        "trailingComma": "none",
+        "bracketSpacing": true,
+        "jsxBracketSameLine": false,
+        "arrowParens": "avoid",
+        "requirePragma": false,
+        "insertPragma": false,
+        "proseWrap": "preserve",
+        "htmlWhitespaceSensitivity": "css",
+        "vueIndentScriptAndStyle": false,
+        "endOfLine": "lf",
+        "embeddedLanguageFormatting": "auto"
+    }
+    ```
+
+    - 위는 다양한 prettier 설정 예시 이다. 프로젝트의 입맛에 맞게 설정해두거나 필요할 때마다 업데이트 하는 편이다.
+    - 개발자들의 코드 일관성이 주 목적이므로, 개발 자체의 직접적인 품질과 관련이 낮지만, 미리 설정해두는 것을 매우 권장한다.
