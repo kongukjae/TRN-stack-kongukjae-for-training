@@ -1,5 +1,3 @@
-function a(data: number): string {
-  return "hello";
-}
+const test: Date = new Date();
 
-console.log(a(1));
+console.log(test);
