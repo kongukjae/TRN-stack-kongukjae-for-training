@@ -2,7 +2,7 @@ const ESLintPlugin = require("eslint-webpack-plugin");
 
 module.exports = {
   mode: "production",
-  entry: "./index.ts",
+  entry: "./src/index.ts",
   module: {
     rules: [
       {
