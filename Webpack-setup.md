@@ -13,8 +13,8 @@
 - 이전버전(과거의)에서는 eslint-loader를 사용했지만, 현재는 eslint-webpack-plugin을 사용한다.
 `npm install --save-dev eslint-webpack-plugin`
 으로 명령 진행
-<!-- 
-4. webpack용 prettier 설정을 위한 loader 설치
-`npm install --save-dev prettier-loader` -->
+
+4. webpack용 prettier 설정을 위한 loader  플러그인 설치
+`npm install --save-dev eslint-plugin-prettier`
 
    
