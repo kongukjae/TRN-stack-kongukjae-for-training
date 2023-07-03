@@ -17,4 +17,9 @@
 4. webpack용 prettier 설정을 위한 loader  플러그인 설치
 `npm install --save-dev eslint-plugin-prettier`
 
-   
+5. `npm install --save-dev ts-loader`
+- webpack 실행을 위한 ts-lodaer 설치
+
+6. `npm install --save-dev @types/webpack`
+- node.js 환경이 typescript 방식 사용을 위한 설치
+
