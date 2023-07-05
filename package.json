@@ -1,7 +1,7 @@
 {
-  "name": "kdt-2-project-b-lecture",
-  "version": "1.0.0",
-  "description": "",
+  "name": "trn-stack-kongukjae-for-training",
+  "version": "0.0.2",
+  "description": "훈련생들을 위한 프로젝트 자료입니다.",
   "main": "index.js",
   "scripts": {
     "build:dev": "webpack --mode development",
@@ -15,15 +15,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kongukjae/KDT-2-Project-B-Lecture.git"
+    "url": "git+https://github.com/kongukjae/TRN-stack-kongukjae-for-training.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["tutorial", "training"],
+  "author": "kongukjae",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kongukjae/KDT-2-Project-B-Lecture/issues"
+    "url": "https://github.com/kongukjae/TRN-stack-kongukjae-for-training/issues"
   },
-  "homepage": "https://github.com/kongukjae/KDT-2-Project-B-Lecture#readme",
+  "homepage": "https://github.com/kongukjae/TRN-stack-kongukjae-for-training#readme",
   "devDependencies": {
     "@babel/core": "^7.22.5",
     "@babel/preset-env": "^7.22.5",
