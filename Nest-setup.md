@@ -15,3 +15,6 @@
 - Nest.js에서는 TypeScript의 데코레이터를 사용하기 때문에, 데코레이터를 사용하기 위한 라이브러리 설치
 - 데코레이터 문법은 매우 특이한 상황이 아니면 설치하여 사용하는 편이다.
 
+5. main.ts entry point 생성
+6. app.module.ts 생성
+
