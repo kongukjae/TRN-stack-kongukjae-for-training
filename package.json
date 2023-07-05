@@ -4,11 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build:dev": "webpack --mode development",
+    "build:prod": "webpack --mode production",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint *.ts",
     "lint:fix": "eslint --fix *.ts",
     "prestart": "npm run lint:fix",
-    "start": "npx ts-node main.ts"
+    "start": "ts-node main.ts"
     
   },
   "repository": {
