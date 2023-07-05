@@ -1,6 +1,6 @@
 {
   "name": "trn-stack-kongukjae-for-training",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "훈련생들을 위한 프로젝트 자료입니다.",
   "main": "index.js",
   "scripts": {
